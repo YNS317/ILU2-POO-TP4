@@ -2,6 +2,7 @@ package scenarioTest;
 
 import personnages.Gaulois;
 import villagegaulois.Etal;
+import villagegaulois.IEtal;
 
 public class Scenario {
 
@@ -15,9 +16,9 @@ public class Scenario {
 		Gaulois obelix = new Gaulois("Obélix", 20);
 		Gaulois asterix = new Gaulois("Astérix", 6);
 
-		Etal<Sanglier> etalSanglierObelix = new Etal<>();
-		Etal<Sanglier> etalSanglierAsterix = new Etal<>();
-		Etal<Poisson> etalPoisson = new Etal<>();
+		IEtal etalSanglierObelix = new Etal<>();
+		IEtal etalSanglierAsterix = new Etal<>();
+		IEtal etalPoisson = new Etal<>();
 
 		Sanglier sanglier1 = new Sanglier(2000, obelix);
 		Sanglier sanglier2 = new Sanglier(1500, obelix);
